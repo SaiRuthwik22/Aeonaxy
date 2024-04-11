@@ -1,0 +1,67 @@
+.template4-title{
+    display: flex;
+    padding: 1em;
+}
+.template4-title h3{
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2rem;
+    color: rgb(255, 95, 121);
+    font-weight: 600;
+    margin-right: 0.5em;
+}
+.template4-title button{
+    height: 2rem;
+    width: 2.2rem;
+    align-self: center;
+}
+.template4-maincontainer{
+text-align: center;
+}
+.template4-maincontainer p{
+    color: grey;
+    margin-top: 0.8em;
+    font-size: 0.9rem;
+}
+.template4-optioncontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4em;
+}
+.template4-maincontainer .option{
+    border: 1px solid #e7e7e9;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 333px;
+    height:294px ;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.template4-maincontainer .option img{
+    height: 200px;
+    width: 300px;
+}
+
+.template4-maincontainer button{
+    margin-top: 30px;
+    padding: 10px 6em;
+    border: none;
+    background-color: rgb(221, 83, 129);
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+.template4-maincontainer .button-disabled{
+    cursor: default;
+    background-color: rgba(221, 83, 129, 0.366);
+    transition: 400ms ease-in-out;
+}

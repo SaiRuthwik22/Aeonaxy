@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-size: 14px;
+  }
+  
+  .navbar .section1 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar  a {
+    text-decoration: none;
+    color: grey;
+    margin-left: 2em;
+    font-size: 1rem;
+  }
+  
+  .navbar h3 {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .navbar input {
+    margin-right: 2em;
+  }
+  
+  .navbar img {
+    margin-right: 2em;
+  }
+  .navbar button{
+    padding: 10px 1em;
+    border: none;
+    background-color: rgb(221, 83, 129);
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .mobile{
+    display: none;
+  }
+  @media screen and (max-width:1030px) {
+    .mobile{
+      display: block;
+    }
+    .navbar .innersection{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 80px;
+      right: -300px;
+      width: 250px;
+      height: 100vh;
+      background: #101b2c;
+      padding: 40px 0 0 10px;
+      transition: 0.3s ease-in-out ;
+      float: right;
+    }
+    .navbar .innersection a{
+      margin-top: 10px;
+    }
+    .navbar  .active{
+      right: 0px;
+    }
+
+  }

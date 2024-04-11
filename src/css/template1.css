@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Recursive:wght@300..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "poppins",sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.template1-leftcontainer{
+    background-image: url(https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    background-color: rgb(2, 32, 40);
+    padding: 2em;
+    width: 50%;
+    overflow: hidden;
+}
+
+.template1-leftcontainer h3{
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(186,186,186);
+    padding-left: 1.2em;
+}
+.template1-leftcontainer h2{
+    color: rgb(186,186,186);
+    font-family: "PT Sans", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    padding-left:1.5em;
+}
+/* Right Container */
+.template1-rightcontainer{
+    width: 100vw;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.template1-rightcontainer h2{
+    font-size: 2rem;
+    padding-bottom:10px;
+}
+.template1-rightcontainer input{
+    border: .5px solid #e7e7e9;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.template1-rightcontainer input:focus{
+    outline: none;
+}
+.template1-rightcontainer a{
+    text-decoration: none;
+}
+.template1-rightcontainer .displayerror{
+    margin-bottom: 10px;
+}
+.template1-rightcontainer .error{
+    background-color: rgba(255, 0, 0, 0.332);
+    color: red;
+}
+.template1-rightcontainer .username{
+    margin-left: 20px;
+}
+.template1-rightcontainer h2{
+    margin-bottom: 0;
+}
+.template1-rightcontainer .existing{
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-top: 2em;
+    margin: 0;
+}
+
+.template1-rightcontainer form{
+    padding: 2em;
+    max-width: 500px;
+}
+.template1-rightcontainer .nameandusername{
+    display: flex;
+    justify-content: space-between;
+}
+.template1-rightcontainer .button{
+    background-color: rgba(255, 87, 115, 0.838);    
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    color: aliceblue;
+    margin-bottom: 20px;
+    padding: 0.5em;
+}
+
+.template1-rightcontainer .inputfields{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.template1-rightcontainer .label{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.template1-rightcontainer #checkbox{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    
+}
+.template1-rightcontainer .inputcheckbox{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.template1-rightcontainer .captchatext{
+    font-size: 0.9rem;
+}
+.template1-rightcontainer .checkboxtext{
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+@media screen and (max-width:890px) {
+    .template1-leftcontainer{
+        display: none;
+    }
+    .template1-rightcontainer{
+        margin-top: 30px;
+    }
+    .template1-rightcontainer .nameandusername{
+        display: flex;
+        flex-direction: column;
+    }
+    .template1-rightcontainer .username{
+        margin-left: 0;
+    }
+}
